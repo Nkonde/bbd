@@ -1,0 +1,82 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">  
+  <script >
+    function myFunction() {
+      var x = document.getElementById("mynavbar");
+      if (x.className==="navbar") {
+        x.className += " response";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  </script>
+  <script src="../js/calc.js"></script>
+  <title>calculator</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar" id="mynavbar">
+      <nav class="navbar" id="mynavbar">
+        <a href="../home/index.html">Home</a>      
+        <a href="../about/index.html">About</a>     
+        <a href="../contact/index.html">Contact</a>  
+        <a href="../calculator/index.html"><u>Calculator</u></a>  
+        <a href="../covid/index.html">Covid</a> 
+        <a href="javascript:void(0);"   onclick="myFunction()" id="toggler" class="toddler">|||</a>              
+    </nav>   
+  </header>
+  <h1 class="calc-h1">My calculator</h1>
+  <section class="calc">
+
+    <article class="screen">
+      <input id="output" type="text" name="" disabled/>
+       
+    </article>
+    <article class="calc-input">
+      <button id="fuctional" class="numericD">C</button>
+      <button id="cos" class="sciencebtn">cos(</button>
+      <button id="tan" class="sciencebtn">tan</button>
+      <button id="sin" class="sciencebtn">sin(</button>
+      <button id="log" class="sciencebtn">log(</button>
+      <button id="ln" class="sciencebtn">ln(</button>
+      <button id="pi" class="sciencebtn">!</button>
+      <button id="pi" class="sciencebtn">π</button>
+      <button id="sq" class="sciencebtn">x²</button>
+      <button id="sqrt" class="sciencebtn">√</button>  
+      <button id="exp" class="sciencebtn">e</button>  
+     
+    </article>
+    <article class="calc-input">
+        <button id="percent" class="numeric">%</button>
+        <button id="openbracket" class="numeric">(</button>
+        <button id="closebracket" class="numeric">)</button>
+        <button id="plus" class="calc-operator">+</button>
+        <button id="seven" class="numeric">7</button>
+        <button id="eight" class="numeric">8</button>
+        <button id="nine" class="numeric">9</button>
+        <button id="minus" class="calc-operator">-</button>
+        <button id="four" class="numeric">4</button>
+        <button id="five" class="numeric">5</button>
+        <button id="six" class="numeric">6</button>
+        <button id="multiply" class="calc-operator">*</button>
+        <button id="one" class="numeric">1</button>
+        <button id="two" class="numeric">2</button>
+        <button id="three" class="numeric">3</button>
+        <button id="dovide" class="calc-operator">/</button>  
+        <button id="delete" class="numericD">DEL</button>
+        <button id="zero" class="numeric">0</button>
+        <button id="dot" class="numeric">.</button>
+        <button id="equal" class="calc-operator">=</button>
+    </article>
+  </section>
+<footer>
+  <p class="footer-p">Made by Thabani</p>
+</footer>
+
+</body>
+
+
+</html>

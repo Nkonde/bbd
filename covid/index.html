@@ -1,0 +1,66 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">   
+  <script>
+    function myFunction() {
+        var x = document.getElementById("mynavbar");
+        if (x.className==="navbar") {
+          x.className += " response";
+        } else {
+          x.className = "navbar";
+        }
+      }
+    </script>
+    <script src="../js/covid.js"></script>
+    <title>covidsummary</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar" id="mynavbar">
+      <a href="../home/index.html">Home</a>      
+      <a href="../about/index.html">About</a>     
+      <a href="../contact/index.html">Contact</a>  
+      <a href="../calculator/index.html">Calculator</a> 
+      <a href="../covid/index.html"><u>Covid</u></a>  
+      <a href="javascript:void(0);"   onclick="myFunction()" id="toggler" class="toddler">|||</a>      
+       
+  </nav>
+  </header>
+  
+  <h1>United Nations Covid-19 Summary</h1>
+  <section class="covidS">
+    <article class="covid">
+      <h4><form action="post">
+        <select id="locality-dropdown" name="locality">
+          <option>Choose Country</option>
+        </select>
+      </form></h4>
+  
+    <img src="../images/un.png" alt="country-img" height="400" width="600">
+    </article>
+  
+    <article class="covid">
+      <h1 >COUNTRY:<span id="countryname"> </span> (<span id="countrycode"></span>)</h1>
+      <h2 id="tc" class="covidH2">Total Confirmed : <span id="totalC"></span></h2>
+      <h2 id="td" class="covidH2">Total Death :<span id="totalD"></span></h2>
+      <h2 id="tr" class="covidH2">Total Recoverd : <span id="totalR"></span></h2>
+  
+      <br>
+      <h3>Dialy Reports</h3>
+      <p><b>Date:</b><span id="date"></span></p>
+      <p><b>New Confirmed:</b><span id="confirmed"></span></p>
+      <p><b>New Death :</b><span id="death"></span></p>
+      <p><b>New Recovery:</b><span id="recovey"></span></p>
+     
+    </article>
+  
+   
+  </section>
+<footer>
+  <p class="footer-p">Made by Thabani</p>
+</footer>
+
+</body>
+
